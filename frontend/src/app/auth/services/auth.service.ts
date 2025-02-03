@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { User } from "../../ipl/types/User";
@@ -19,19 +18,10 @@ export class AuthService {
       'Access-Control-Allow-Origin': '*'
     })
   };
-=======
-import { Injectable } from "@angular/core";
-import { HttpClient, HttpHeaders } from "@angular/common/http";
-import { map, Observable } from "rxjs";
-import { User } from "../../ipl/types/User";
-
-export class AuthService {
->>>>>>> f690d9fac59447d47cf75f8af3a01898997d927c
 
   constructor(private http: HttpClient) {}
 
   login(user: Partial<User>): Observable<{ [key: string]: string }> {
-<<<<<<< HEAD
     return this.http.post<{ token: string }>(
       `${this.loginUrl}/user/login`,
       user,
@@ -45,17 +35,6 @@ export class AuthService {
 
   getRole() {
     return localStorage.getItem("role");
-=======
-    return new Observable();
-  }
-
-  getToken() : string {
-    return '';
-  }
-
-  getRole() : string {
-    return '';
->>>>>>> f690d9fac59447d47cf75f8af3a01898997d927c
   }
 
   getUsers(): Observable<User[]> {
@@ -63,10 +42,6 @@ export class AuthService {
   }
 
   createUser(user: User): Observable<User> {
-<<<<<<< HEAD
     return this.http.post<User>(`${this.loginUrl}/user/register`, user);
-=======
-    return new Observable();
->>>>>>> f690d9fac59447d47cf75f8af3a01898997d927c
   }
 }
