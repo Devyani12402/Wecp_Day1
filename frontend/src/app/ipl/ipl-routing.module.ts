@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+<<<<<<< HEAD
 import { CricketerCreateComponent } from "./components/cricketercreate/cricketercreate.component";
 import { CricketerEditComponent } from "./components/cricketeredit/cricketeredit.component";
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
@@ -21,6 +22,10 @@ const routes: Routes = [
   { path: "vote", component: VoteComponent },
   { path: "ticketbooking", component: TicketBookingComponent }
 ];
+=======
+
+const routes: Routes = [];
+>>>>>>> f690d9fac59447d47cf75f8af3a01898997d927c
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

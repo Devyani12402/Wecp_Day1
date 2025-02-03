@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Team } from './Team';
 
 export class Match {
@@ -37,3 +38,31 @@ export class Match {
         console.log(`Winner: ${this.winnerTeam.teamName}`);
     }
 }
+=======
+
+export class Match {
+ matchId:number;
+ firstTeamId:number;
+ secondTeamId:number;
+ matchDate:Date;
+ venue: string;
+ result:string;
+ status:string;
+ winnerTeamId:number;
+ constructor(matchId:number,firstTeamId:number,secondTeamId:number,matchDate:Date,venue: string,result:string,status:string,winnerTeamId:number){
+        this.matchId=matchId;
+        this.firstTeamId=firstTeamId;
+ this.secondTeamId =secondTeamId;
+ this.matchDate = matchDate;
+this.venue = venue;
+this.result= result;
+this.status = status;
+this.winnerTeamId= winnerTeamId;
+    }
+    displayInfo():void{
+      console.log(`Match ID: ${this.matchId}`);
+      console.log(`Match date: ${this.matchDate}`);
+      console.log(`Venue: ${this.venue}`);
+    }
+}
+>>>>>>> f690d9fac59447d47cf75f8af3a01898997d927c

@@ -140,7 +140,11 @@ export class IplService {
     
   cancelBooking(bookingId: number): Observable<any> {
     // Implementation goes here
+<<<<<<< HEAD
     return new Observable<any>();
+=======
+    return new Observable<>();
+>>>>>>> f690d9fac59447d47cf75f8af3a01898997d927c
   }
 
   getBookingsByUserEmail(email: string): Observable<TicketBooking[]> {
