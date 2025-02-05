@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { HttpErrorResponse } from "@angular/common/http";
 import { Component, OnInit } from "@angular/core";
 import { FormGroup, FormBuilder, Validators } from "@angular/forms";
@@ -125,3 +126,9 @@ export class CricketerEditComponent implements OnInit {
     }
   }
   
+=======
+
+export class CricketerEditComponent {
+
+}
+>>>>>>> d0a253a502b8ebba907db243bd5a16ab9fc7d0b1

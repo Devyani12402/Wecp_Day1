@@ -10,4 +10,8 @@ import { Team } from "../../types/Team";
 
 export class TeamSampleComponent  {
   team: Team = new Team(1,"CSK","Chennai","Dhoni",2015);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d0a253a502b8ebba907db243bd5a16ab9fc7d0b1

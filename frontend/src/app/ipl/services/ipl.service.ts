@@ -20,6 +20,7 @@ export class IplService {
   //Backend API calls of Team
   
   addTeam(team: Team): Observable<Team> {
+<<<<<<< HEAD
     return this.http.post<Team>(`${this.baseUrl}/team`, team);
   }
 
@@ -63,11 +64,69 @@ export class IplService {
 
   getCricketersByTeam(teamId: number): Observable<Cricketer[]> {
     return this.http.get<Cricketer[]>(`${this.baseUrl}/cricketer/team/${teamId}`);
+=======
+    // Implementation goes here
+    return new Observable<Team>();
+  }
+
+  updateTeam(team: Team): Observable<Team> {
+    // Implementation goes here
+    return new Observable<Team>();
+  }
+
+  deleteTeam(teamId: number): Observable<any> {
+    // Implementation goes here
+    return new Observable<any>();
+  }
+
+  getAllTeams(): Observable<Team[]> {
+    // Implementation goes here
+    return new Observable<Team[]>();
+  }
+
+  getTeamById(teamId: number): Observable<Team> {
+     // Implementation goes here
+     return new Observable<Team>();
+  }
+
+
+  //Backend API calls of Cricketer
+
+  addCricketer(cricketer: Cricketer): Observable<Cricketer> {
+    // Implementation goes here
+    return new Observable<Cricketer>();
+  }
+
+  updateCricketer(cricketer: Cricketer): Observable<Cricketer> {
+    // Implementation goes here
+    return new Observable<Cricketer>();
+  }
+
+  deleteCricketer(cricketerId: number): Observable<any> {
+    // Implementation goes here
+    return new Observable<any>();
+  }
+
+  getAllCricketers(): Observable<Cricketer[]> {
+    // Implementation goes here
+    return new Observable<Cricketer[]>();
+  }
+
+  getCricketerById(cricketerId: number): Observable<Cricketer> {
+     // Implementation goes here
+     return new Observable<Cricketer>();
+  }
+
+  getCricketersByTeam(teamId: number): Observable<Cricketer[]> {
+    // Implementation goes here
+    return new Observable<Cricketer[]>();
+>>>>>>> d0a253a502b8ebba907db243bd5a16ab9fc7d0b1
   }
 
   //Backend API calls of Match
 
   addMatch(match: Match): Observable<Match> {
+<<<<<<< HEAD
     return this.http.post<Match>(`${this.baseUrl}/match`, match);
   }
 
@@ -89,11 +148,41 @@ export class IplService {
 
   getAllMatchesByStatus(status: string): Observable<Team[]> {
     return this.http.get<Team[]>(`${this.baseUrl}/match/status/${status}`);
+=======
+    // Implementation goes here
+    return new Observable<Match>();
+  }
+
+  updateMatch(match: Match): Observable<Match> {
+    // Implementation goes here
+    return new Observable<Match>();
+  }
+
+  deleteMatch(matchId: number): Observable<any> {
+    // Implementation goes here
+    return new Observable<any>();
+  }
+
+  getAllMatches(): Observable<Match[]> {
+    // Implementation goes here
+    return new Observable<Match[]>();
+  }
+
+  getMatchById(matchId: number): Observable<Match> {
+     // Implementation goes here
+     return new Observable<Match>();
+  }
+
+  getAllMatchesByStatus(status: string): Observable<Team[]> {
+    // Implementation goes here
+    return new Observable<Team[]>();
+>>>>>>> d0a253a502b8ebba907db243bd5a16ab9fc7d0b1
   }
 
   //Backend API calls of Vote
 
   getAllVotes(): Observable<Vote[]> {
+<<<<<<< HEAD
     return this.http.get<Vote[]>(`${this.baseUrl}/vote`);
   }
   
@@ -103,11 +192,26 @@ export class IplService {
   
   getVotesCountOfAllCategories(): Observable<Map<string, number>> {
     return this.http.get<Map<string, number>>(`${this.baseUrl}/vote/count/`);
+=======
+    // Implementation goes here
+    return new Observable<Vote[]>();
+  }
+  
+  createVote(vote: Vote): Observable<Vote> {
+    // Implementation goes here
+    return new Observable<Vote>();
+  }
+  
+  getVotesCountOfAllCategories(): Observable<Map<string, number>> {
+    // Implementation goes here
+    return new Observable<Map<string, number>>();
+>>>>>>> d0a253a502b8ebba907db243bd5a16ab9fc7d0b1
   }
 
   //Backend API calls of TicketBooking
 
   getAllTicketBookings(): Observable<TicketBooking[]> {
+<<<<<<< HEAD
     return this.http.get<TicketBooking[]>(`${this.baseUrl}/ticket`);
   }
     
@@ -121,5 +225,28 @@ export class IplService {
 
   getBookingsByUserEmail(email: string): Observable<TicketBooking[]> {
     return this.http.get<TicketBooking[]>(`${this.baseUrl}/ticket/user/${email}`);
+=======
+    // Implementation goes here
+    return new Observable<TicketBooking[]>();
+  }
+    
+  createBooking(ticketBooking: TicketBooking): Observable<TicketBooking> {
+    // Implementation goes here
+    return new Observable<TicketBooking>();
+  }
+    
+  cancelBooking(bookingId: number): Observable<any> {
+    // Implementation goes here
+<<<<<<< HEAD
+    return new Observable<any>();
+=======
+    return new Observable<>();
+>>>>>>> f690d9fac59447d47cf75f8af3a01898997d927c
+  }
+
+  getBookingsByUserEmail(email: string): Observable<TicketBooking[]> {
+    // Implementation goes here
+    return new Observable<TicketBooking[]>();
+>>>>>>> d0a253a502b8ebba907db243bd5a16ab9fc7d0b1
   }
 }

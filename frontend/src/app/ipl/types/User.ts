@@ -1,12 +1,28 @@
 
 export class User {
+<<<<<<< HEAD
 userId:number;
+=======
+<<<<<<< HEAD
+userId:number;
+=======
+userId:string;
+>>>>>>> f690d9fac59447d47cf75f8af3a01898997d927c
+>>>>>>> d0a253a502b8ebba907db243bd5a16ab9fc7d0b1
 fullName:string;
 username:string;
 password:string;
 email:string;
 role:string;
+<<<<<<< HEAD
 constructor(userId:number,
+=======
+<<<<<<< HEAD
+constructor(userId:number,
+=======
+constructor(userId:string,
+>>>>>>> f690d9fac59447d47cf75f8af3a01898997d927c
+>>>>>>> d0a253a502b8ebba907db243bd5a16ab9fc7d0b1
     fullName:string,
     username:string,
     password:string,

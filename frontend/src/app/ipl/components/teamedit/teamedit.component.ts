@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -100,3 +101,8 @@ export class TeamEditComponent implements OnInit {
   }
 }
 
+=======
+export class TeamEditComponent {
+ 
+}
+>>>>>>> d0a253a502b8ebba907db243bd5a16ab9fc7d0b1
